@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="produksiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="produk">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="tgl_produksi" Type="nvarchar" MaxLength="50" />
+    <Property Name="shift" Type="nchar" MaxLength="10" />
+    <Property Name="kode_produk" Type="nvarchar" MaxLength="50" />
+    <Property Name="jumlah_produk" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="produksiModelStoreContainer">
+    <EntitySet Name="produk" EntityType="Self.produk" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

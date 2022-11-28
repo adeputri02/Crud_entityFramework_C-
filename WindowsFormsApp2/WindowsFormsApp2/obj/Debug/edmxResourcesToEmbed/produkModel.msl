@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="produksiModelStoreContainer" CdmEntityContainer="produksiEntities1">
+    <EntitySetMapping Name="produks">
+      <EntityTypeMapping TypeName="produksiModel.produk">
+        <MappingFragment StoreEntitySet="produk">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="tgl_produksi" ColumnName="tgl_produksi" />
+          <ScalarProperty Name="shift" ColumnName="shift" />
+          <ScalarProperty Name="kode_produk" ColumnName="kode_produk" />
+          <ScalarProperty Name="jumlah_produk" ColumnName="jumlah_produk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="produksiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="produk">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="tgl_produksi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="shift" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="kode_produk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="jumlah_produk" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="produksiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="produks" EntityType="Self.produk" />
+  </EntityContainer>
+</Schema>
